@@ -53,13 +53,6 @@ switch between **Case Diagnosis** (the main HITL workflow — pick a case,
 run diagnosis, Approve/Edit/Reject) and **Dashboard Summary** (issue-type
 counts, severity mix, AI-vs-human agreement rate).
 
-**Command-line tools** (useful for grading / the demo video):
-```bash
-python src/checker.py --case NET-001      # single case
-python src/checker.py --all               # all 30 cases
-python src/engine.py --case NET-001       # full diagnosis JSON for one case
-```
-
 ## 3. Mapping this repo to the deliverables checklist
 
 | Deliverable | File |
