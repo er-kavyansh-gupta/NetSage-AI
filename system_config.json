@@ -1,0 +1,25 @@
+{
+  "model": "claude-sonnet-4-6",
+  "max_tokens": 1000,
+  "temperature": 0.2,
+  "confidence_thresholds": {
+    "auto_flag_low_confidence_below": "medium",
+    "low": 0.4,
+    "medium": 0.7,
+    "high": 0.9
+  },
+  "paths": {
+    "cases_csv": "data/cases.csv",
+    "prompt_file": "prompts/diagnose_prompt.md",
+    "audit_log": "docs/model_audit_log.md",
+    "decision_log_csv": "docs/decision_log.csv"
+  },
+  "human_review": {
+    "required": true,
+    "allowed_actions": ["Approve & Deploy", "Edit Commands", "Reject"]
+  },
+  "checker": {
+    "enabled": true,
+    "run_before_llm": true
+  }
+}
